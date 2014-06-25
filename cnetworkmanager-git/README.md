@@ -1,1 +1,44 @@
-Command Line Interface for NetworkManager
+What
+
+cnetworkmanager is a command-line client for NetworkManager, intended to supplement and replace the GUI applets.
+
+It is licensed under the GPL v2 or later.
+Screenshots
+
+$ cnetworkmanager -h
+Usage: cnetworkmanager [options]
+
+Options:
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  -w BOOL, --wifi=BOOL  Enable or disable wireless
+  -o BOOL, --online=BOOL
+                        Enable or disable network at all
+  --state               Print the NM state
+  --whe, --wireless-hardware-enabled
+                        Print whether the WiFi is enabled
+  -d, --device-list, --dev
+                        List devices
+  --device-info=DEV, --di=DEV
+                        Info about device DEV (by interface or UDI(TODO))
+  -a, -n, --ap-list, --ap, --nets
+                        List access points
+  --ap-info=AP, --ai=AP
+                        Info about access point AP (by hw address or
+                        UDI(TODO))
+  -u, --usrcon          List user connection settings
+  -s, --syscon          List system connection settings
+  -c, --actcon          List active connections
+  --demo                Run a random demonstration of the API
+  --activate-connection=[KIND],ID,[DEV],[APMAC]
+                        activate the KIND(user/system) connection ID on device
+                        DEV using APMAC.
+  -m, --monitor         loop to show dbus signals
+  -C SSID, --connect=SSID
+                        Connect to a wireless network SSID (creating the
+                        configuration using the key options below)
+  --unprotected         network does not require a key
+  --wep-hex=KEY         use this WEP key of 26 hex digits
+  --wep-pass=KEY        use this WEP passphrase
+  --wpa-psk-hex=KEY     use this WPA key of 64 hex digits
+  --wpa-pass=KEY        use this WPA passphrase
