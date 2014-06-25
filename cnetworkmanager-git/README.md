@@ -12,7 +12,7 @@ Options:
   --version             show program's version number and exit
   -h, --help            show this help message and exit
   -w BOOL, --wifi=BOOL  Enable or disable wireless
-  -o BOOL, --online=BOOL
+  -o BOOL, --online=BOOL 
                         Enable or disable network at all
   --state               Print the NM state
   --whe, --wireless-hardware-enabled
