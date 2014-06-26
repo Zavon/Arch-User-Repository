@@ -19,7 +19,7 @@ conflicts=('ampache-git' 'ampache-development')
 backup=(srv/http/ampache/config/ampache.cfg.php)
 install=ampache.install
 source=(git://github.com/ampache/ampache.git)
-md5sums=('SKIP')
+sha256sums=('SKIP')
 
 pkgver() {
   cd ${pkgname}
